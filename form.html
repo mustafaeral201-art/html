@@ -25,10 +25,41 @@
   </noscript>
   <!-- Start Code -->
 
+  <main class="site-shell">
 
+    <!--form card-->
+    <section class="form-card" id="form" aria-labelledby="form-title">
 
+      <div class="form-header">
+        <h2 id="form-title">Eğitim/Danışmanlık Başvuru Formu</h2>
+        <p>Bilgilerinizi eksiksiz giriniz(*)</p>
+      </div>
+    </section>
 
-  
+    <!--form-->
+   <form action="#" method="get">
+    <fielset>
+        <legend>Kişisel Bilgiler</legend>
+        <div class="form-row">
+
+            <!--Adınız ve Soyadınız *-->
+            <div class="input-group">
+            <label for="fullname">Adınız ve Soyadınız</label>
+            <input 
+            type="text" 
+            id="fullname" 
+            name="fullname"
+            placeholder="Adınız ve Soyadınız..." 
+            minlenght="3" 
+            required 
+            autofocus/>
+             <small class="input-help">En az 3 karakter uzunluğunda olmalıdır.</small>
+        </div>
+    </fielset>
+   </form>
+  </main>
+    
+
   <!-- End Code -->
 </body>
 </html>
