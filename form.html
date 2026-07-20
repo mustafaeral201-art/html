@@ -55,6 +55,51 @@
             autofocus/>
              <small class="input-help">En az 3 karakter uzunluğunda olmalıdır.</small>
         </div>
+
+
+                   <!--Email *-->
+            <div class="input-group">
+            <label for="email">E-mail (*)</label>
+            <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="örnek:hamitmizrak@gmail.com"
+            required 
+          />
+             <small class="input-help">örnek:hamitmizrak@gmail.com</small>
+        </div>
+
+
+                   <!--Telefon numaranız *-->
+            <div class="input-group">
+            <label for="phone">Telefon numaranız (*)</label>
+            <input 
+            type="tel" 
+            id="phone" 
+            name="phone"
+            placeholder="Adı+90 111 222 33 44"
+            pattern="[0-9s()+-]{10,18}"
+            required 
+          />
+             <small class="input-help">Sadece telefon formatına uygun uygun karakterler
+              kullanılabilir.</small>
+        </div>
+                   <!--City *-->
+            <div class="input-group">
+            <label for="city">Şehir (*)</label>
+            <select id="city" name="city" required>
+                <option value="" selected disabled>Şehir Seçiniz</option>
+                <option value="istanbul">İstanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="bursa">Bursa</option>
+                <option value="antalya">Antalya</option>
+             <small class="input-help">Şehir bilgisi gereklidir.</small>
+
+
+
+
     </fielset>
    </form>
   </main>
