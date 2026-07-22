@@ -15,8 +15,6 @@
   <meta name="author" content="MsC Mustafa Eral" />
   <meta name="description" content="Full stack developer nedir?" />
 </head>
-
-<body>
   <noscript>
     <!--JavaScript devre dışı bırakılmışsa gösterilecek içerik-->
     <p>
@@ -42,18 +40,32 @@
         <legend>Kişisel Bilgiler</legend>
         <div class="form-row">
 
-            <!--Adınız ve Soyadınız *-->
+            <!--Adınız (*)-->
             <div class="input-group">
-            <label for="fullname">Adınız ve Soyadınız</label>
+            <label for="fullname">Adınız (*)</label>
             <input 
             type="text" 
             id="fullname" 
             name="fullname"
-            placeholder="Adınız ve Soyadınız..." 
+            placeholder="Adınız" 
             minlenght="3" 
             required 
             autofocus/>
              <small class="input-help">En az 3 karakter uzunluğunda olmalıdır.</small>
+        </div>
+
+            <!--Soyadınız (*)-->
+            <div class="input-group">
+            <label for="surname">Soyadınız (*)</label>
+            <input 
+            type="text" 
+            id="surname" 
+            name="surname" 
+            placeholder="Soyadınız" 
+            minlenght="3" 
+            required 
+            autofocus />
+              <small class="input-help">En az 3 karakter uzunluğunda olmalıdır.</small>
         </div>
 
 
@@ -82,24 +94,41 @@
             pattern="[0-9s()+-]{10,18}"
             required 
           />
-             <small class="input-help">Sadece telefon formatına uygun uygun karakterler
+             <small class="input-help">Sadece telefon formatına uygun karakterler
               kullanılabilir.</small>
         </div>
-                   <!--City *-->
+      </div>
+
+
+              <div class="form-row">
+             <!--Şehir -->
             <div class="input-group">
-            <label for="city">Şehir (*)</label>
+            <label for="city">Şehir</label>
             <select id="city" name="city" required>
-                <option value="" selected disabled>Şehir Seçiniz</option>
+                <option value="" selected disabled>Seçiniz</option>
                 <option value="istanbul">İstanbul</option>
                 <option value="ankara">Ankara</option>
                 <option value="izmir">İzmir</option>
                 <option value="bursa">Bursa</option>
                 <option value="antalya">Antalya</option>
-             <small class="input-help">Şehir bilgisi gereklidir.</small>
+            </select>
+             <small class="input-help">Şehir seçiniz (*)</small>
+        </div>
+
+        </div>
+        <div class="form-row">
+          <div class="check-line">
+            <input type="checkbox" required>
+            <label for="terms">Kullanım koşullarını kabul ediyorum (*)</label>
+          <a href="#"> Aydınlatma Metni</a>
+          </div> </div>
 
 
+        <div class="button-row"> 
 
-
+          <button class="ghost-btn" type="reset">Temizle</button>
+          <button class="primary-btn" type="submit">Başvuruyu Gönder</button>
+        </div>
     </fielset>
    </form>
   </main>
